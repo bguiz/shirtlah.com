@@ -1,0 +1,37 @@
+baseurl = "http://shirtlah.com/"
+languageCode = "en-SG"
+title = "Shirt Lah!"
+theme = "casper"
+paginate = 3
+
+[params]
+  description = "Shirts for Singaporeans"
+  cover = "images/cover.png"
+  author = "shirtlah"
+  twitterName = "shirtlah"
+  facebookName = "shirtlah"
+  authorlocation = "Singapore, Singapore"
+  googleAnalyticsUserID = "UA-37884921-7"
+  hideHUGOSupport = true
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  weight = -1000
+  identifier = "main-home"
+  url = "/"
+
+[[menu.main]]
+  pre = "<h3>Follow</h3>"
+  name = "Twitter"
+  identifier = "social-twitter"
+  weight = 2010
+  url = "https://twitter.com/shirtlah"
+
+[[menu.main]]
+  name = "Facebook"
+  identifier = "social-facebook"
+  weight = 2020
+  url = "https://facebook.com/shirtlah"

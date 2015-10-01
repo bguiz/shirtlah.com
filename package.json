@@ -1,0 +1,30 @@
+{
+  "name": "shirtlah.com",
+  "version": "0.0.0",
+  "description": "Shirt Lah!",
+  "main": "index.js",
+  "scripts": {
+    "downloadssg": "wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz",
+    "installssg": "tar -xvf hugo_0.14_linux_amd64.tar.gz && cd hugo_0.14_linux_amd64 && ln -s ./hugo_0.14_linux_amd64 hugo",
+    "installtheme": "mkdir -p ./src/themes && cd ./src/themes && git clone https://github.com/vjeantet/hugo-theme-casper.git casper",
+    "generatedocs": "export PATH=${PWD}/hugo_0.14_linux_amd64:${PATH} && cd ./src && hugo version && hugo",
+    "autodocs": "node ./node_modules/autodocs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bguiz/shirtlah.com.git"
+  },
+  "keywords": [
+    "shirt",
+    "lah"
+  ],
+  "author": "bguiz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bguiz/shirtlah.com/issues"
+  },
+  "homepage": "https://github.com/bguiz/shirtlah.com",
+  "devDependencies": {
+    "autodocs": "^0.7.1"
+  }
+}

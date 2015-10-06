@@ -13,9 +13,12 @@ paginate = 3
   authorlocation = "Singapore, Singapore"
   googleAnalyticsUserID = "UA-37884921-7"
   hideHUGOSupport = true
+  paginatedSections = "post for"
 
 [permalinks]
   post = "/post/:slug/"
+  for = "/for/:slug/"
+  design = "/design/:slug/"
 
 [[menu.main]]
   name = "Home"
@@ -27,11 +30,11 @@ paginate = 3
   pre = "<h3>Follow</h3>"
   name = "Twitter"
   identifier = "social-twitter"
-  weight = 2010
+  weight = 3010
   url = "https://twitter.com/shirtlah"
 
 [[menu.main]]
   name = "Facebook"
   identifier = "social-facebook"
-  weight = 2020
+  weight = 3020
   url = "https://facebook.com/shirtlah"

@@ -2,7 +2,7 @@
 author = "shirtlah"
 comments = true
 date = "2015-09-30T21:41:23+08:00"
-draft = false
+draft = true
 type = "page"
 layout = "cover"
 image = "images/cover.png"

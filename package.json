@@ -7,7 +7,7 @@
   "scripts": {
     "downloadssg": "wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz",
     "installssg": "tar -xvf hugo_0.14_linux_amd64.tar.gz && cd hugo_0.14_linux_amd64 && ln -s ./hugo_0.14_linux_amd64 hugo",
-    "installtheme": "mkdir -p ./src/themes && cd ./src/themes && git clone https://github.com/bguiz/hugo-theme-casper.git#paginatedSections casper",
+    "installtheme": "mkdir -p ./src/themes && cd ./src/themes && git clone https://github.com/bguiz/hugo-theme-casper.git --branch bguiz-cumulative --single-branch casper",
     "generatedocs": "export PATH=${PWD}/hugo_0.14_linux_amd64:${PATH} && cd ./src && hugo version && hugo",
     "autodocs": "node ./node_modules/autodocs"
   },

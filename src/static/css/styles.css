@@ -32,17 +32,22 @@
 }
 .speech-bubble.left:after {
   border-width: 10px 30px 10px 0;
-  left: -30px;
+  left: -29px;
 }
 .speech-bubble.left:before {
   border-width: 11px 30px 11px 0;
-  left: -32px;
+  left: -31px;
 }
 .speech-bubble.right:after {
   border-width: 10px 0 10px 30px;
-  right: -30px;
+  right: -29px;
 }
 .speech-bubble.right:before {
   border-width: 11px 0 11px 30px;
-  right: -32px;
+  right: -31px;
+}
+
+.wordcloud-container {
+  display: none;
+  overflow: hidden;
 }

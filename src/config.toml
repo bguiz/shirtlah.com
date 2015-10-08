@@ -3,9 +3,10 @@ languageCode = "en-SG"
 title = "Shirt Lah!"
 theme = "casper"
 paginate = 3
+DisqusShortname = "shirtlah"
 
 [params]
-  description = "Shirts for Singaporeans"
+  description = "Shirts for Singlish fans"
   cover = "images/cover.png"
   author = "shirtlah"
   twitterName = "shirtlah"

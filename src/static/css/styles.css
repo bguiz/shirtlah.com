@@ -1,0 +1,167 @@
+.page-title {
+  font-family: Roboto, sans-serif;
+  font-size: 4.8rem;
+  text-shadow: 0 0.5px 0 #ccc,
+               0 1.0px 0 #c9c9c9,
+               0 1.5px 0 #bbb,
+               0 2.0px 0 #b9b9b9,
+               0 2.5px 0 #aaa,
+               0 3.0px 0.5px rgba(0,0,0,0.1),
+               0 0 2.5px rgba(0,0,0,0.1),
+               0 0.5px 1.5px rgba(0,0,0,0.3),
+               0 1.5px 2.5px rgba(0,0,0,0.2),
+               0 2.5px 5px rgba(0,0,0,0.25),
+               0 5px 5px rgba(0,0,0,0.2),
+               0 10px 10px rgba(0,0,0,0.15);
+}
+
+.page-description {
+  font-family: Roboto, sans-serif;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  /*text-shadow: 0px 0px 1px rgba(255,255,255,1.0);*/
+}
+
+.speech-bubble {
+  font-weight: bold;
+  position: relative;
+  width: 80%;
+  min-height: 10px;
+  padding: 10px;
+  background: #EFEEEC;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #07090B solid 2px;
+}
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent #EFEEEC;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 25px;
+}
+.speech-bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent #07090B;
+  display: block;
+  width: 0;
+  z-index: 0;
+  top: 25px;
+}
+.speech-bubble.left:after {
+  border-width: 10px 30px 10px 0;
+  left: -29px;
+}
+.speech-bubble.left:before {
+  border-width: 11px 30px 11px 0;
+  left: -31px;
+}
+.speech-bubble.right:after {
+  border-width: 10px 0 10px 30px;
+  right: -29px;
+}
+.speech-bubble.right:before {
+  border-width: 11px 0 11px 30px;
+  right: -31px;
+}
+
+.wordcloud-container {
+  display: none;
+  overflow: hidden;
+}
+
+.mailchimp-slim {
+  margin: 0 15px 0 15px;
+}
+
+.mailchimp-slim label {
+  font-family: Roboto, sans-serif;
+  color: rgb(51, 51, 51);
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  box-sizing: border-box;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height:  30px;
+}
+
+.mailchimp-slim input {
+  -webkit-writing-mode: horizontal-tb;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: textfield;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mailchimp-slim input.email {
+  font: inherit;
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+
+  height: 50px;
+  margin-bottom: 17px;
+  border: 0px solid #000;
+  background-color: rgb(232, 232, 232);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 2px inset;
+
+  width: 65%;
+  float: left;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.mailchimp-slim input.button {
+  -webkit-appearance: push-button;
+  -webkit-user-select: none;
+  white-space: pre;
+  align-items: flex-start;
+  text-align: center;
+  color: buttontext;
+  padding: 2px 6px 3px 3px;
+  border: 2px outset buttonface;
+  background-color: buttonface;
+
+  width: 35%;
+  margin: 0;
+  margin-left: -2px;
+  float: left;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 50px;
+  background-color: rgb(33, 121, 194);
+  display: inline-block;
+  padding: 9px 15px;
+  color: #fff;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 2px inset;
+}

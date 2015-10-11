@@ -164,6 +164,21 @@ function getWordList() {
     ["ya ya papaya",1],
     ["song song gao Jurong",1],
     ["huat ah!",2],
+    ["simi taiji",1],
+    ["neh neh pok",1],
+    ["itchy backside",1],
+    ["agaration",1],
+    ["sia la",1],
+    ["lepak",1],
+    ["yum seng!",1],
+    ["zhun zhun",1],
+    ["win liao lor",1],
+    ["cheem",1],
+    ["powderful siol",1],
+    ["I clap for you",1],
+    ["barang barang",1],
+    ["curry pok",1],
+    ["swee ah",1],
     ["bo chup",2]
   ];
 }

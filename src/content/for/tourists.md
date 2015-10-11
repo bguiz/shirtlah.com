@@ -8,6 +8,7 @@ share = true
 slug = "tourists"
 tags = ["for", "tourists"]
 title = "Tourist Lah!"
+pinterestMedia = "images/shirtlah-logo-120x120.png"
 
 [menu.main]
   name = "For tourists"

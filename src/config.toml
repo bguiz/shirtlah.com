@@ -34,12 +34,6 @@ DisqusShortname = "shirtlah"
   design = "/design/:slug/"
 
 [[menu.main]]
-  name = "Home"
-  weight = -1000
-  identifier = "main-home"
-  url = "/"
-
-[[menu.main]]
   pre = "<h3>Follow</h3>"
   name = "Twitter"
   identifier = "social-twitter"
@@ -51,3 +45,21 @@ DisqusShortname = "shirtlah"
   identifier = "social-facebook"
   weight = 3020
   url = "https://facebook.com/shirtlah"
+
+[[menu.main]]
+  name = "Instagram"
+  identifier = "social-instagram"
+  weight = 3030
+  url = "https://instagram.com/shirtlah"
+
+[[menu.main]]
+  name = "Pinterest"
+  identifier = "social-pinterest"
+  weight = 3040
+  url = "https://pinterest.com/shirtlah"
+
+[[menu.main]]
+  name = "Google+"
+  identifier = "social-google-plus"
+  weight = 3040
+  url = "https://google.com/+ShirtLah"

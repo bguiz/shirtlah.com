@@ -25,11 +25,11 @@ and we wanna tell you the story of how we started:&lt;/p&gt;
 
 
 &lt;div class=&#34;text-bubble-wrapper &#34;&gt;
-  
   &lt;div class=&#34;text-bubble thought left&#34;&gt;
     &lt;p&gt;I have that shirt at home, lucky never wear today, otherwise damn &lt;strong&gt;malu&lt;/strong&gt;!&lt;/p&gt;
 
   &lt;/div&gt;
+  
   &lt;span class=&#34;clearfloats&#34; /&gt;
 &lt;/div&gt;
 &lt;/p&gt;
@@ -40,17 +40,17 @@ and we wanna tell you the story of how we started:&lt;/p&gt;
 
 
 &lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
-  
-  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
-    &lt;div class=&#34;inner&#34;&gt;
-      Limpeh
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
   &lt;div class=&#34;text-bubble speech right&#34;&gt;
     &lt;p&gt;Wa lao eh, boring sia.&lt;/p&gt;
 
   &lt;/div&gt;
+  
+  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
+    &lt;div class=&#34;speaker-inner&#34;&gt;
+      Limpeh
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
   &lt;span class=&#34;clearfloats&#34; /&gt;
 &lt;/div&gt;
 &lt;/p&gt;
@@ -65,17 +65,17 @@ in a notebook while sitting on an MRT &amp;hellip;&lt;/p&gt;
 
 
 &lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
-  
-  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
-    &lt;div class=&#34;inner&#34;&gt;
-      Limpeh
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
   &lt;div class=&#34;text-bubble speech right&#34;&gt;
     &lt;p&gt;Off-peak time, MRT akcherlee can sit down one!&lt;/p&gt;
 
   &lt;/div&gt;
+  
+  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
+    &lt;div class=&#34;speaker-inner&#34;&gt;
+      Limpeh
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
   &lt;span class=&#34;clearfloats&#34; /&gt;
 &lt;/div&gt;
 &lt;/p&gt;
@@ -89,53 +89,53 @@ and the conversation literally went like this:&lt;/p&gt;
 
 
 &lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
-  
-  &lt;div class=&#34;text-bubble-speaker left&#34;&gt;
-    &lt;div class=&#34;inner&#34;&gt;
-      Brendan
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
   &lt;div class=&#34;text-bubble speech left&#34;&gt;
     &lt;p&gt;Cong ah, the designs can or not?&lt;/p&gt;
 
   &lt;/div&gt;
-  &lt;span class=&#34;clearfloats&#34; /&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
-  
-  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
-    &lt;div class=&#34;inner&#34;&gt;
-      Zhi Cong
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
-  &lt;div class=&#34;text-bubble speech right&#34;&gt;
-    &lt;p&gt;The ideas can, but your drawing ah, CMI!&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;span class=&#34;clearfloats&#34; /&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
   
   &lt;div class=&#34;text-bubble-speaker left&#34;&gt;
-    &lt;div class=&#34;inner&#34;&gt;
+    &lt;div class=&#34;speaker-inner&#34;&gt;
       Brendan
     &lt;/div&gt;
   &lt;/div&gt;
   
+  &lt;span class=&#34;clearfloats&#34; /&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
+  &lt;div class=&#34;text-bubble speech right&#34;&gt;
+    &lt;p&gt;The ideas can, but your drawing ah, CMI!&lt;/p&gt;
+
+  &lt;/div&gt;
+  
+  &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
+    &lt;div class=&#34;speaker-inner&#34;&gt;
+      Zhi Cong
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;span class=&#34;clearfloats&#34; /&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
   &lt;div class=&#34;text-bubble speech left&#34;&gt;
     &lt;p&gt;Yalah, yalah, I know - we need to find a real artist!&lt;/p&gt;
 
   &lt;/div&gt;
+  
+  &lt;div class=&#34;text-bubble-speaker left&#34;&gt;
+    &lt;div class=&#34;speaker-inner&#34;&gt;
+      Brendan
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
   &lt;span class=&#34;clearfloats&#34; /&gt;
 &lt;/div&gt;
 &lt;/p&gt;

@@ -2,15 +2,15 @@
 {{ $type := or (.Get "type") ("speech") }}
 {{ $speaker := .Get "speaker" }}
 <div class="text-bubble-wrapper {{ if $speaker }}speaker{{ end }}">
+  <div class="text-bubble {{ $type }} {{ $pointer }}">
+    {{ .Inner }}
+  </div>
   {{ if $speaker }}
   <div class="text-bubble-speaker {{ $pointer }}">
-    <div class="inner">
+    <div class="speaker-inner">
       {{ $speaker }}
     </div>
   </div>
   {{ end }}
-  <div class="text-bubble {{ $type }} {{ $pointer }}">
-    {{ .Inner }}
-  </div>
   <span class="clearfloats" />
 </div>

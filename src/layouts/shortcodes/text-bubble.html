@@ -1,0 +1,16 @@
+{{ $pointer := or (.Get "pointer") ("right") }}
+{{ $type := or (.Get "type") ("speech") }}
+{{ $speaker := .Get "speaker" }}
+<div class="text-bubble-wrapper {{ if $speaker }}speaker{{ end }}">
+  {{ if $speaker }}
+  <div class="text-bubble-speaker {{ $pointer }}">
+    <div class="inner">
+      {{ $speaker }}
+    </div>
+  </div>
+  {{ end }}
+  <div class="text-bubble {{ $type }} {{ $pointer }}">
+    {{ .Inner }}
+  </div>
+  <span class="clearfloats" />
+</div>

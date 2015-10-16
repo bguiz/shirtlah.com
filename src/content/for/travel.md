@@ -17,27 +17,27 @@ title = "Travel Lah!"
 
 Singapore is so small, when we go on holiday, it's always overseas.
 
-{{% speech-bubble %}}
+{{% text-bubble speaker="Limpeh" %}}
 Cross causeway oso considered overseas meh?
-{{% /speech-bubble %}}
+{{% /text-bubble %}}
 
 
 When we travel, we hardly ever see other Singaporeans. When you see someone who looks like maybe they are from Singapore, you're not super sure. They could be from China, or they could be from Indonesia, or they could be from India.
 
-{{% speech-bubble %}}
+{{% text-bubble speaker="Limpeh" %}}
 Open mouth can already lor ... I hear one word I confirm plus chop know from Singapore or not!
-{{% /speech-bubble %}}
+{{% /text-bubble %}}
 
 But once they start talking, there's no mistaking it - the sounds of Singlish are crystal clear. They're definitive. That's really the only way we can recognise each other: By how we talk and sound.
 What if there was another way? What if you can instantly recognise a fellow Singaporean just by seeing them?
 
-{{% speech-bubble %}}
+{{% text-bubble speaker="Limpeh" %}}
 Wah piang eh! You say oreddy before leh!
-{{% /speech-bubble %}}
+{{% /text-bubble %}}
 
 
 That's right! Wear Shirt Lah - it has Singlish phrases written on it, and another SIngaporean would recognise you right away. No doubt. When on holiday, wear a Shirt Lah! You'll never know how many more countrymen you'll meet overseas!
 
-{{% speech-bubble %}}
+{{% text-bubble speaker="Limpeh" %}}
 Just wear a Shirt Lah!
-{{% /speech-bubble %}}
+{{% /text-bubble %}}

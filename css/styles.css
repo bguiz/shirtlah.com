@@ -22,53 +22,144 @@
   /*text-shadow: 0px 0px 1px rgba(255,255,255,1.0);*/
 }
 
-.speech-bubble {
+.clearfloats {
+  clear: both;
+  display: block;
+}
+.text-bubble-speaker {
+  width: 20%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.text-bubble-speaker .inner {
+  vertical-align: bottom;
+}
+.text-bubble-speaker.left {
+  text-align: right;
+  margin: 25px 30px 10px 0;
+}
+.text-bubble-speaker.right {
+  text-align: left;
+  margin: 25px 0 10px 30px;
+}
+.text-bubble {
+  display: inline-block;
   font-weight: bold;
   position: relative;
   width: 80%;
   min-height: 10px;
   padding: 10px;
-  background: #EFEEEC;
+  background: #F8FDFF;
+  margin: 0.25em 0 0.25em 0;
+  z-index: 0;
+}
+.text-bubble-wrapper.speaker .text-bubble {
+  width: 70%;
+}
+.text-bubble-wrapper.speaker .text-bubble-speaker.left {
+  float: left;
+}
+.text-bubble-wrapper.speaker .text-bubble-speaker.right {
+  float: right;
+}
+.text-bubble-wrapper.speaker .text-bubble.left {
+  float: right;
+}
+.text-bubble-wrapper.speaker .text-bubble.right {
+  float: left;
+}
+.text-bubble.speech {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   border: #07090B solid 2px;
 }
-.speech-bubble:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-color: transparent #EFEEEC;
-  display: block;
-  width: 0;
-  z-index: 1;
-  top: 25px;
+.text-bubble.thought {
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  border: #7C8084 solid 2px;
 }
-.speech-bubble:before {
+.text-bubble p {
+  margin: 0.15em 0 0.15em 0;
+}
+.text-bubble:after, .text-bubble:before {
   content: '';
-  position: absolute;
   border-style: solid;
+}
+.text-bubble:after {
+  border-color: transparent #F8FDFF;
+}
+.text-bubble:before {
   border-color: transparent #07090B;
+}
+.text-bubble.speech:after, .text-bubble.speech:before {
+  position: absolute;
   display: block;
   width: 0;
-  z-index: 0;
   top: 25px;
 }
-.speech-bubble.left:after {
+.text-bubble.thought:after, .text-bubble.thought:before {
+  position:absolute;
+  background-color: #F8FDFF;
+  border-color: #7C8084;
+  border-width: 2px;
+}
+.text-bubble.speech:after {
+  z-index: 2;
+}
+.text-bubble.speech:before {
+  z-index: 1;
+}
+.text-bubble.thought:after {
+  width:20px;
+  height:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  z-index: 1;
+}
+.text-bubble.thought:before {
+  width:10px;
+  height:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  z-index: 2;
+}
+.text-bubble.speech.left:after {
+  margin-top: 2px;
   border-width: 10px 30px 10px 0;
   left: -29px;
 }
-.speech-bubble.left:before {
-  border-width: 11px 30px 11px 0;
+.text-bubble.speech.left:before {
+  border-width: 12px 30px 11px 0;
   left: -31px;
 }
-.speech-bubble.right:after {
-  border-width: 10px 0 10px 30px;
+.text-bubble.speech.right:after {
+  margin-top: 2px;
+  border-width: 9px 0 10px 29px;
   right: -29px;
 }
-.speech-bubble.right:before {
-  border-width: 11px 0 11px 30px;
+.text-bubble.speech.right:before {
+  border-width: 11px 0 13px 31px;
   right: -31px;
+}
+.text-bubble.thought.left:before {
+  bottom: -19px;
+  left: 3px;
+}
+.text-bubble.thought.left:after {
+  bottom: -14px;
+  left: 8px;
+}
+.text-bubble.thought.right:before {
+  bottom: -19px;
+  right: 3px;
+}
+.text-bubble.thought.right:after {
+  bottom: -14px;
+  right: 8px;
 }
 
 .wordcloud-container {

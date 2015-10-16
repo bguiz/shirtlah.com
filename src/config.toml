@@ -31,6 +31,7 @@ DisqusShortname = "shirtlah"
 [permalinks]
   post = "/post/:slug/"
   for = "/for/:slug/"
+  team = "/team/:slug/"
   design = "/design/:slug/"
 
 [[menu.main]]

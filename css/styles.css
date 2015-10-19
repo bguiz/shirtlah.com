@@ -31,6 +31,15 @@
   display: inline-block;
   white-space: nowrap;
 }
+.text-bubble-speaker .speaker-image {
+  width: 90%;
+}
+.text-bubble-speaker .speaker-image img {
+  max-width: 100%;
+}
+.text-bubble-speaker .speaker-name {
+  text-align: center;
+}
 .text-bubble-speaker:before {
   content: '';
   display: inline-block;
@@ -173,7 +182,60 @@
   overflow: hidden;
 }
 
+.floating-cta {
+  display: inline;
+  position: fixed;
+  min-height: 39px;
+  max-height: 68px;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 99000;
+}
+
+.floating-cta-inner {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  max-width: 50%;
+  background-color: #2179C2;
+  color: #FFF;
+  border-bottom: none;
+  border-top: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  border-right: 1px solid #E0E0E0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 0px 4px 1px #E0E0E0;
+}
+
+.floating-cta-button {
+  display: block;
+  margin: 2px auto;
+  max-width: 90%;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.floating-cta-buffer {
+  display: block;
+  position: relative;
+  height: 68px;
+  background-color: #FFFFFF;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99001;
+}
+
 .mailchimp-slim {
+  position: relative;
   margin: 0 15px 0 15px;
 }
 

@@ -27,7 +27,7 @@ I have that shirt at home, lucky never wear today, otherwise damn **malu**!
 
 After that, it occurred to us so many Singaporeans were wearing shirts that have **nothing to do with us**, nothing to do with Singapore? Almost everyone here speaks **Singlish**, but we have hardly seen anyone wearing a T-shirt with Singlish on it - it's always just English.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Wa lao eh, boring sia.
 {{% /text-bubble %}}
 
@@ -37,7 +37,7 @@ So we decided to fix it. We'll make our own!
 Brendan sketched the first set of designs,
 in a notebook while sitting on an MRT ...
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Off-peak time, MRT akcherlee can sit down one!
 {{% /text-bubble %}}
 
@@ -46,13 +46,13 @@ and *Whatsapp-ed* it to Zhi Cong.
 We met later that afternoon (at Bishan S11),
 and the conversation literally went like this:
 
-{{% text-bubble speaker="Brendan" pointer="left" %}}
+{{% text-bubble speaker="brendan" pointer="left" %}}
 Cong ah, the designs can or not?
 {{% /text-bubble %}}
-{{% text-bubble speaker="Zhi Cong" pointer="right" %}}
+{{% text-bubble speaker="zhicong" pointer="right" %}}
 The ideas can, but your drawing ah, CMI!
 {{% /text-bubble %}}
-{{% text-bubble speaker="Brendan" pointer="left" %}}
+{{% text-bubble speaker="brendan" pointer="left" %}}
 Yalah, yalah, I know - we need to find a real artist!
 {{% /text-bubble %}}
 

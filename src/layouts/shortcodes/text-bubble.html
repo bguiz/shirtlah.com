@@ -1,16 +1,28 @@
 {{ $pointer := or (.Get "pointer") ("right") }}
 {{ $type := or (.Get "type") ("speech") }}
-{{ $speaker := .Get "speaker" }}
-<div class="text-bubble-wrapper {{ if $speaker }}speaker{{ end }}">
+{{ $speakerId := .Get "speaker" }}
+<div class="text-bubble-wrapper {{ if $speakerId }}speaker{{ end }}">
   <div class="text-bubble {{ $type }} {{ $pointer }}">
     {{ .Inner }}
   </div>
-  {{ if $speaker }}
-  <div class="text-bubble-speaker {{ $pointer }}">
-    <div class="speaker-inner">
-      {{ $speaker }}
+  {{ if $speakerId }}
+    {{ $speaker := ( index .Page.Site.Data.textbubblespeakers $speakerId ) }}
+    {{ $speakerName := or ( ( and $speaker $speaker.name ) $speakerId ) }}
+    {{ $speakerImage := ( or ( and ( eq $pointer "right" ) $speaker.imageright ) ( $speaker.imageleft ) ) }}
+    <div class="text-bubble-speaker {{ $pointer }}">
+      <div class="speaker-inner">
+        {{ if $speakerImage }}
+          <div class="speaker-image">
+            <img src="{{ .Page.Site.BaseURL }}{{ $speakerImage }}" />
+          </div>
+        {{ end }}
+        {{ if $speakerName }}
+          <div class="speaker-name">
+            {{ $speakerName }}
+          </div>
+        {{ end }}
+      </div>
     </div>
-  </div>
   {{ end }}
   <span class="clearfloats" />
 </div>

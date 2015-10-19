@@ -18,30 +18,30 @@ pinterestMedia = "images/shirtlah-logo-120x120.png"
 
 Many many people have been to Singapore - [54 million per year](http://www.changiairportgroup.com/cag/html/the-group/air_traffic_statistics.html) - but most of them don't step out of the airport. Those who do come into Singapore they have a great time, but one thing perplexes them, and that's the language.
 
-{{% text-bubble speaker="Limpeh" pointer="right" %}}
+{{% text-bubble speaker="limpeh" pointer="right" %}}
 Ha! Tourist come, hear hear Singlish, then blur like *sotong*!
 {{% /text-bubble %}}
 
 At first they hate it, and then later they come to love it.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Ya lor, English so boring, Singlish so interesting.
 {{% /text-bubble %}}
 
 Then, it is time to leave. That means time to get a souvenir to remember their travels. What do they get?
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Keychain, fridge magnet, shot glass lah!
 {{% /text-bubble %}}
 
 Memorabilia depicting various landmarks in Singapore are *passable* souvenirs. Not very exciting, not particularly interesting though.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Si beh boring leh, this kind of thing.
 {{% /text-bubble %}}
 
 How about one that just hits the spot? How about getting something that captures your experience in Singapore, and captures he essence of talking with Singaporeans?
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Get a Shirt Lah!
 {{% /text-bubble %}}

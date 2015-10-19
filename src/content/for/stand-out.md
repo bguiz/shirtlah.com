@@ -20,13 +20,13 @@ or walking through void decks in your HDB estate.
 
 You look around you, and everyone around you is wearing T-shirts with the same ol' slogans and designs.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Eh, actually ah, I got this shirt. It say Singapore is a fine city.
 {{% /text-bubble %}}
 
 Yeah, but *Singapore is a fine city* is a T-shirt about Singapore, about what foreigners think about our country. Not exactly a T-shirt about what Singaporeans think about Singapore.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Ya lor, I wear cos bo pian no other shirts about Singapore. So I suck thumb and wear.
 {{% /text-bubble %}}
 
@@ -36,7 +36,7 @@ or eating palak mutton until gelat at Al Ameen at Bencoolen.
 
 Again, you look around you, and notice everyone with the same boring shirts as before. You're wondering, why no-one is wearing T-shirts with Singlish - or anything to do with Singapore - on them.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Simi!? That was last time lor. Now different oreddy! Now shiok oreddy!
 {{% /text-bubble %}}
 
@@ -54,6 +54,6 @@ Wah, her shirt damn interesting, I oso want!
 
 Be that guy and be that girl who stands out.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Wear Shirt Lah!
 {{% /text-bubble %}}

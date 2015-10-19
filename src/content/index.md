@@ -25,7 +25,7 @@ You're not the only one!
 **Fact**: Pick an English joke/ pop-culture reference/ whatever,
 and there's a T-shirt somewhere out there, with that printed on it...
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Sure got wan!
 {{% /text-bubble %}}
 
@@ -33,7 +33,7 @@ Sure got wan!
 It's like all the jokes went to a party together,
 but the Singlish ones never got the invite.
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Why liddat? Singlish *kena bo jio* liao!
 {{% /text-bubble %}}
 
@@ -42,7 +42,7 @@ and you wear T-shirts,
 you've come to the right place -
 because we're gonna fix that!
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Aiyoh, everybody in SG oso speak Singlish.
 Every day oso so hot, confirm wear T-shirt wan!
 {{% /text-bubble %}}
@@ -59,7 +59,7 @@ We promise to make you laugh!
 
 P.S. Help us spread the word with the hashtag: **#wearashirtlah**
 
-{{% text-bubble speaker="Limpeh" %}}
+{{% text-bubble speaker="limpeh" %}}
 Wah, so fast oreddy got hashtag.
 Champion lah!
 {{% /text-bubble %}}

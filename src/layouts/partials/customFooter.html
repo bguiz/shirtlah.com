@@ -4,19 +4,17 @@
   <canvas id="wordcloud">
   </canvas>
 </div>
-<script src="{{.Site.BaseURL}}js/wordcloud2.js" type="text/javascript"></script>
-<script src="{{.Site.BaseURL}}js/code.js" type="text/javascript"></script>
 <script type="text/javascript">
-  (function() {
-    var canvas = document.getElementById('wordcloud');
+  window.wordcloudConfig = {
     {{ if .Site.Params.cover }}
-      canvas.width = Math.floor(window.innerWidth * 1.2);
-      canvas.height = Math.floor(window.innerHeight * 0.5);
+      canvasWidth: Math.floor(window.innerWidth * 1.2),
+      canvasHeight: Math.floor(window.innerHeight * 0.5),
     {{ else }}
-      canvas.width = Math.floor(window.innerWidth * 1.2);
-      canvas.height = Math.floor(window.innerHeight * 0.2);
+      canvasWidth: Math.floor(window.innerWidth * 1.2),
+      canvasHeight: Math.floor(window.innerHeight * 0.2),
     {{ end }}
-    renderWordCloudCoverImage();
-  })();
+  };
 </script>
+<script async src="{{.Site.BaseURL}}js/wordcloud2.js" type="text/javascript"></script>
+<script async src="{{.Site.BaseURL}}js/code.js" type="text/javascript"></script>
 

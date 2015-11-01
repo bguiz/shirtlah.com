@@ -31,6 +31,8 @@ Wa lao eh, got Singlish exam, I sure score A-star in PSLE wan!
 - C. Ramu got 5 apples **lah**!
 - D. All of the above
 
+{{% share-dynamic text="How many apples does Ramu have? #singlish #psle #maths" %}}
+
 (2) Cloze passage:
 
 > Siti asks Ramu for 1 apple ------. Ramu say ------. Siti ------ why ------.
@@ -38,6 +40,8 @@ Wa lao eh, got Singlish exam, I sure score A-star in PSLE wan!
 > Ramu says "------ eh, why you ------? Just now you gimme, then now you want ------. You super ------ leh!"
 >
 > Siti says "I dun like this cloze passage. My ------ text book everything ------ happy ending."
+
+{{% share-dynamic text="Can you answer this #singlish #cloze passage? #psle" %}}
 
 ### Answers
 
@@ -63,5 +67,4 @@ We hope you enjoyed your trip down memory lane, with fond memories of your prima
 
 In the meantime, tell everyone about Shirt Lah! - tell your friends, tell your class, tell your office, tell your ah ma ah pa, even tell the **tissue paper aunty** at the kopitiam!
 
-
-
+{{% share-dynamic text="Tissue paper aunty also say: #wearashirtlah!" %}}

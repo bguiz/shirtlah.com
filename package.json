@@ -5,8 +5,10 @@
   "description": "Shirt Lah!",
   "main": "index.js",
   "scripts": {
-    "js:build": "browserify ./src/static-preprocess/js/index.js -t uglifyify --debug -o ./src/static/js/index.js",
+    "js:build": "browserify ./src/static-preprocess/js/index.js -t uglifyify -o ./src/static/js/index.js",
+    "js:builddev": "browserify ./src/static-preprocess/js/index.js -t uglifyify --debug -o ./src/static/js/index.js",
     "js:watch": "onchange './src/static-preprocess/js/**/*.js' -v -- npm run js:build",
+    "js:watchdev": "onchange './src/static-preprocess/js/**/*.js' -v -- npm run js:builddev",
     "build": "npm run js:build",
     "watch": "npm run js:watch",
     "setupci": "npm run downloadssg && npm run installssg && npm run installtheme",

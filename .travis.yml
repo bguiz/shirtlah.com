@@ -4,9 +4,7 @@ go:
 install:
 - npm i
 script:
-- npm run downloadssg
-- npm run installssg
-- npm run installtheme
+- npm run setupci
 - npm run autodocs
 env:
   global:

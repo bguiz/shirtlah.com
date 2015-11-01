@@ -9,6 +9,8 @@ function renderWordCloudCoverImage() {
   }
   else {
     var canvas = document.getElementById('wordcloud');
+    canvas.width = window.wordcloudConfig.canvasWidth;
+    canvas.height = window.wordcloudConfig.canvasHeight;
     var width = canvas.width;
     drawWordCloud({
       gridSize: Math.round(8 * width / 1024),
@@ -27,56 +29,56 @@ function renderWordCloudCoverImage() {
       list: getWordList(),
     });
   }
-}
 
-function drawWordCloud(options) {
-  var canvas = document.getElementById('wordcloud');
-  if (!canvas) {
-    console.error('No canvas found');
-    return;
+  function drawWordCloud(options) {
+    var canvas = document.getElementById('wordcloud');
+    if (!canvas) {
+      console.error('No canvas found');
+      return;
+    }
+    options = options || { list: [] };
+    if (typeof options === 'string') {
+      options = eval("options="+options.trim());
+    }
+    canvas.addEventListener('wordclouddrawn', onWordCloudDrawn);
+    canvas.addEventListener('wordcloudstart', onWordCloudStart);
+    canvas.addEventListener('wordcloudstop', onWordCloudStop);
+    canvas.addEventListener('wordcloudabort', onWordCloudAbort);
+    window.WordCloud(canvas, options);
   }
-  options = options || { list: [] };
-  if (typeof options === 'string') {
-    options = eval("options="+options.trim());
+
+  function onWordCloudDrawn(evt) {
   }
-  canvas.addEventListener('wordclouddrawn', onWordCloudDrawn);
-  canvas.addEventListener('wordcloudstart', onWordCloudStart);
-  canvas.addEventListener('wordcloudstop', onWordCloudStop);
-  canvas.addEventListener('wordcloudabort', onWordCloudAbort);
-  window.WordCloud(canvas, options);
-}
 
-function onWordCloudDrawn(evt) {
-}
+  function onWordCloudStart(evt) {
+  }
 
-function onWordCloudStart(evt) {
-}
+  function onWordCloudAbort(evt) {
+  }
 
-function onWordCloudAbort(evt) {
-}
-
-function onWordCloudStop(evt) {
-  var canvas = document.getElementById('wordcloud');
-  var ctx = canvas.getContext('2d');
-  var coverImage = document.querySelector('.main-header');
-  if (coverImage && ctx && typeof ctx.createRadialGradient === 'function') {
-    var w = canvas.width;
-    var h = canvas.height;
-    var gradient = ctx.createRadialGradient(
-      w * 0.5,
-      h * 0.5,
-      h * 0.1,
-      w * 0.5,
-      h * 0.5,
-      w * 0.5);
-    gradient.addColorStop(0.0, 'rgba(240,0,0,0.5)');
-    gradient.addColorStop(0.2, 'rgba(240,0,0,0.4)');
-    gradient.addColorStop(0.7, 'rgba(240,0,0,0.1)');
-    gradient.addColorStop(1.0, 'rgba(0,  0,0,0.3)');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0,0,w,h);
-    var pngDataUrl = canvas.toDataURL('image/png');
-    coverImage.style['background-image'] = 'url('+pngDataUrl+')';
+  function onWordCloudStop(evt) {
+    var canvas = document.getElementById('wordcloud');
+    var ctx = canvas.getContext('2d');
+    var coverImage = document.querySelector('.main-header');
+    if (coverImage && ctx && typeof ctx.createRadialGradient === 'function') {
+      var w = canvas.width;
+      var h = canvas.height;
+      var gradient = ctx.createRadialGradient(
+        w * 0.5,
+        h * 0.5,
+        h * 0.1,
+        w * 0.5,
+        h * 0.5,
+        w * 0.5);
+      gradient.addColorStop(0.0, 'rgba(240,0,0,0.5)');
+      gradient.addColorStop(0.2, 'rgba(240,0,0,0.4)');
+      gradient.addColorStop(0.7, 'rgba(240,0,0,0.1)');
+      gradient.addColorStop(1.0, 'rgba(0,  0,0,0.3)');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0,0,w,h);
+      var pngDataUrl = canvas.toDataURL('image/png');
+      coverImage.style['background-image'] = 'url('+pngDataUrl+')';
+    }
   }
 }
 
@@ -183,7 +185,7 @@ function getWordList() {
   ];
 }
 
-jQuery(function($) {
+function doAnalytics() {
     var scrollListenerDebounceMs = 150;
     var minScrollBeforeTrack = 150;
     var scrollListenerDebounceTimer = 0;
@@ -289,4 +291,46 @@ jQuery(function($) {
       }
       analytics('set', 'dimension1', cat);
     }
+}
+
+function doShareDynamic() {
+  var groups = document.querySelectorAll('.share-dynamic');
+  if (!groups || groups.length < 1) {
+    return;
+  }
+  var url = encodeURIComponent(window.location.href);
+  //TODO get proper media URL
+  var mediaUrl = encodeURIComponent('http://shirtlah.com/images/shirtlah-logo-300x300.png');
+  groups.forEach(function eachGroup(group) {
+    var input = group.querySelector('.input');
+    // var twitter = group.querySelector('.twitter');
+    // var facebook = group.querySelector('.facebook');
+    // var pinterest = group.querySelector('.pinterest');
+    // var googleplus = group.querySelector('.googleplus');
+    var data = {
+      input: input,
+      twitter: group.querySelector('.twitter'),
+      facebook: group.querySelector('.facebook'),
+      pinterest: group.querySelector('.pinterest'),
+      googleplus: group.querySelector('.googleplus'),
+    };
+    inputChanged(data);
+    input.addEventListener('input', inputChanged.bind(undefined, data));
+  });
+
+  function inputChanged(data) {
+    var content = encodeURIComponent(data.input.value);
+    data.twitter.href = 'https://twitter.com/share?status='+content;
+    data.facebook.href = 'https://www.facebook.com/sharer/sharer.php?u='+url;
+    data.pinterest.href =
+      'http://pinterest.com/pin/create/button/?url='+url+
+      '{{ if .Params.pinterestmedia }}&amp;media='+mediaUrl+'&amp;description='+content;
+    data.googleplus.href = 'https://plus.google.com/share?url='+url;
+  }
+}
+
+jQuery(function($) {
+  doAnalytics();
+  doShareDynamic();
+  renderWordCloudCoverImage();
 });

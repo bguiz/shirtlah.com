@@ -5,10 +5,18 @@
   "description": "Shirt Lah!",
   "main": "index.js",
   "scripts": {
+    "js:build": "browserify ./src/static-preprocess/js/index.js -t uglifyify -o ./src/static/js/index.js",
+    "js:builddev": "browserify ./src/static-preprocess/js/index.js -t uglifyify --debug -o ./src/static/js/index.js",
+    "js:watch": "onchange './src/static-preprocess/js/**/*.js' -v -- npm run js:build",
+    "js:watchdev": "onchange './src/static-preprocess/js/**/*.js' -v -- npm run js:builddev",
+    "build": "npm run js:build",
+    "watch": "npm run js:watch",
+    "setupci": "npm run downloadssg && npm run installssg && npm run installtheme",
     "downloadssg": "wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz",
     "installssg": "tar -xvf hugo_0.14_linux_amd64.tar.gz && cd hugo_0.14_linux_amd64 && ln -s ./hugo_0.14_linux_amd64 hugo",
     "installtheme": "mkdir -p ./src/themes && cd ./src/themes && git clone https://github.com/bguiz/hugo-theme-casper.git --branch bguiz-cumulative --single-branch casper",
-    "generatedocs": "export PATH=${PWD}/hugo_0.14_linux_amd64:${PATH} && cd ./src && hugo version && hugo",
+    "generatedocs": "npm run build && export PATH=${PWD}/hugo_0.14_linux_amd64:${PATH} && cd ./src && hugo version && hugo",
+    "servedocs": "npm run watch && export PATH=${PWD}/hugo_0.14_linux_amd64:${PATH} && cd ./src && hugo version && hugo server -w",
     "autodocs": "node ./node_modules/autodocs"
   },
   "repository": {
@@ -26,6 +34,9 @@
   },
   "homepage": "https://github.com/bguiz/shirtlah.com",
   "devDependencies": {
-    "autodocs": "^0.7.1"
+    "autodocs": "^0.7.1",
+    "browserify": "^12.0.1",
+    "onchange": "^2.0.0",
+    "uglifyify": "^3.0.1"
   }
 }

@@ -1,25 +1,40 @@
-<textarea
-  autocomplete="off"
-  cols="30"
-  rows="2"
-  maxlength="160"
-  required="true"
-  spellcheck="false"
-  >
-  {{ or (.Get "content") ( ( safeHTML .Title )+" "+( .Permalink ) ) }}
-</textarea>
-<a class="icon-twitter" style="font-size: 1.4em"
-    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-    <span class="hidden">Twitter</span>
-</a>
-<a class="icon-facebook" style="font-size: 1.4em"
-    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-    <span class="hidden">Facebook</span>
-</a>
-<a class="icon-pinterest" style="font-size: 1.4em"
-    <span class="hidden">Pinterest</span>
-</a>
-<a class="icon-google-plus" style="font-size: 1.4em"
-   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-    <span class="hidden">Google+</span>
-</a>
+{{ $text := safeHTML ( .Get "text" ) }}
+<div class="share-dynamic">
+  <span class="share-input">
+    <textarea
+      class="input"
+      autocomplete="off"
+      cols="30"
+      rows="2"
+      maxlength="160"
+      required="true"
+      spellcheck="false"
+      >{{ $text }}</textarea>
+  </span>
+  <span class="share-buttons">
+    <div class="share-action">
+      <a class="twitter icon-twitter" style="font-size: 1.4em"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+      </a>
+    </div>
+    <div class="share-action">
+      <a class="facebook icon-facebook" style="font-size: 1.4em"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+      </a>
+    </div>
+<!--     <div class="share-action">
+      <a class="pinterest icon-pinterest" style="font-size: 1.4em"
+        onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+        <span class="hidden">Pinterest</span>
+      </a>
+    </div> -->
+<!--     <div class="share-action">
+      <a class="googleplus icon-google-plus" style="font-size: 1.4em"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+      </a>
+    </div> -->
+  </span>
+</div>

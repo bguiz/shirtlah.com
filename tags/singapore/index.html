@@ -261,18 +261,15 @@
   <canvas id="wordcloud">
   </canvas>
 </div>
-<script src="http://shirtlah.com/js/wordcloud2.js" type="text/javascript"></script>
-<script src="http://shirtlah.com/js/code.js" type="text/javascript"></script>
 <script type="text/javascript">
-  (function() {
-    var canvas = document.getElementById('wordcloud');
+  window.wordcloudConfig = {
     
-      canvas.width = Math.floor(window.innerWidth * 1.2);
-      canvas.height = Math.floor(window.innerHeight * 0.5);
+      canvasWidth: Math.floor(window.innerWidth * 1.2),
+      canvasHeight: Math.floor(window.innerHeight * 0.5),
     
-    renderWordCloudCoverImage();
-  })();
+  };
 </script>
+<script async src="http://shirtlah.com/js/index.js" type="text/javascript"></script>
 
 
     

@@ -18,4 +18,4 @@ Kaya is coconut and pandan jam.
 Kaya plus butter plus toast bread is damn shiok, I tell you!
 {{% /text-bubble %}}
 
-K is for Kaya.
+{{% share-dynamic text="Limpeh says: K is for Kaya. #singlish" %}}

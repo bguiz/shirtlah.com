@@ -6,13 +6,17 @@ module.exports = {
 };
 
 function renderWordCloudCoverImage() {
-  if (!window.WordCloud) {
+  if (!window.wordcloudConfig) {
+    console.error('No word cloud config');
+  }
+  else if (!window.WordCloud) {
     console.error('No word cloud library')
   }
   else if (!window.WordCloud.isSupported) {
     console.error('Word cloud not supported');
   }
-  else {
+  else if (!window.wordcloudConfig.image) {
+    // only render word cloud if there is no cover image
     var canvas = document.getElementById('wordcloud');
     canvas.width = window.wordcloudConfig.canvasWidth;
     canvas.height = window.wordcloudConfig.canvasHeight;

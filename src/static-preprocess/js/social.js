@@ -29,7 +29,7 @@ function shareDynamic() {
   function inputChanged(data) {
     var content = encodeURIComponent(data.input.value);
     data.twitter.href = 'https://twitter.com/share?text='+content+'&url='+url;
-    data.facebook.href = 'https://www.facebook.com/sharer/sharer.php?u='+url+'&t='+content;
+    data.facebook.href = 'https://www.facebook.com/sharer/sharer.php?u='+url;
     // data.pinterest.href =
     //   'http://pinterest.com/pin/create/button/?url='+url+
     //   '{{ if .Params.pinterestmedia }}&amp;media='+mediaUrl+'&amp;description='+content;

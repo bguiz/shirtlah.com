@@ -14,6 +14,8 @@ title = "F is for Fly Kite"
 
 Tell someone to fly kite when you want them to leave you alone or get lost.
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" pointer="right" %}}
 Wa lao eh, always kacheow me for what? Go fly kite la you!
 {{% /text-bubble %}}

@@ -14,6 +14,8 @@ title = "K is for Kaya"
 
 Kaya is coconut and pandan jam.
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" pointer="right" %}}
 Kaya plus butter plus toast bread is damn shiok, I tell you!
 {{% /text-bubble %}}

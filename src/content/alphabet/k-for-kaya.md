@@ -3,7 +3,7 @@ author = "shirtlah"
 comments = true
 date = "2015-11-08T06:53:55+08:00"
 draft = false
-image = ""
+image = "/images/alphabet/kaya-collage.jpeg"
 menu = ""
 share = true
 slug = "k-for-kaya"
@@ -56,3 +56,5 @@ so that the kaya and the butter mix - yum!
 Best served with Milo/ Kopi/ Teh!
 
 {{% share-dynamic text="How to make kaya toast #singaporefood #singlish" %}}
+
+![Kaya toast all](/images/alphabet/kaya-collage.jpeg)

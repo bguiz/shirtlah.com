@@ -40,39 +40,19 @@ function doCallToActionAnalytics(analyticsFn) {
   emailSubmitElement.addEventListener('click', onClickEmailSubmit);
 
   function onClickSignUpButton() {
-    analyticsFn('send', {
-      hitType: 'event',
-      eventCategory: 'CTA',
-      eventAction: 'navigate-click',
-      eventLabel: '#signup',
-    });
+    analyticsFn('send', 'event', 'CTA','navigate-click', '#signup');
   }
 
   function onFocusEmailInput() {
-    analyticsFn('send', {
-      hitType: 'event',
-      eventCategory: 'CTA',
-      eventAction: 'email-focus',
-      eventLabel: emailInputElement.value,
-    });
+    analyticsFn('send', 'event', 'CTA', 'email-focus', emailInputElement.value);
   }
 
   function onBlurEmailInput() {
-    analyticsFn('send', {
-      hitType: 'event',
-      eventCategory: 'CTA',
-      eventAction: 'email-blur',
-      eventLabel: emailInputElement.value,
-    });
+    analyticsFn('send', 'event', 'CTA', 'email-blur', emailInputElement.value);
   }
 
   function onClickEmailSubmit() {
-    analyticsFn('send', {
-      hitType: 'event',
-      eventCategory: 'CTA',
-      eventAction: 'email-submit',
-      eventLabel: emailInputElement.value,
-    });
+    analyticsFn('send', 'event', 'CTA', 'email-submit', emailInputElement.value);
   }
 }
 

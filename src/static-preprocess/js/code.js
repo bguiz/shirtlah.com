@@ -6,6 +6,8 @@ var social = require('./social');
 
 jQuery(function($) {
   analytics.initAnalytics();
+  analytics.doScrollAnalytics();
+  analytics.doCallToActionAnalytics();
   social.shareDynamic();
   header.renderWordCloudCoverImage();
 });

@@ -11,11 +11,12 @@
       <label for="mce-EMAIL">{{ .Site.Params.mailchimpLabelText | markdownify }}</label>
       <p>{{ .Site.Params.mailchimpLabelSubText | markdownify }}</p>
       <input
+        class="email"
+        id="mce-EMAIL"
+        tabindex="1"
         type="email"
         value=""
         name="EMAIL"
-        class="email"
-        id="mce-EMAIL"
         placeholder="Your email address"
         required>
       <div style="position: absolute; left: -5000px;">
@@ -27,11 +28,13 @@
       </div>
       <div class="clear">
         <input
+          id="mc-embedded-subscribe"
+          class="button"
+          tabindex="2"
           type="submit"
           value="{{ .Site.Params.mailchimpButtonText }}"
           name="subscribe"
-          id="mc-embedded-subscribe"
-          class="button">
+          >
       </div>
     </div>
   </form>

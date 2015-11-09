@@ -6,8 +6,88 @@
     <description>Recent content on Shirt Lah!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-SG</language>
-    <lastBuildDate>Mon, 09 Nov 2015 15:20:55 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2015 15:37:17 +0800</lastBuildDate>
     <atom:link href="http://shirtlah.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>QR code</title>
+      <link>http://shirtlah.com/qrcode/</link>
+      <pubDate>Mon, 09 Nov 2015 15:37:17 +0800</pubDate>
+      
+      <guid>http://shirtlah.com/qrcode/</guid>
+      <description>&lt;p&gt;Hey there! Looks like you found us by scanning a QR code,
+like the one on this page.&lt;/p&gt;
+
+&lt;p&gt;Sign up for Shirt Lah! news below,
+and you&amp;rsquo;ll hear from Limpeh every now and then!&lt;/p&gt;
+
+&lt;p&gt;
+
+
+&lt;div class=&#34;text-bubble-wrapper speaker&#34;&gt;
+  &lt;div class=&#34;text-bubble speech right&#34;&gt;
+    &lt;p&gt;Limpeh very popular wan, when he email, everyone listen wan, K?&lt;/p&gt;
+
+  &lt;/div&gt;
+  
+    
+    
+    
+    &lt;div class=&#34;text-bubble-speaker right&#34;&gt;
+      &lt;div class=&#34;speaker-inner&#34;&gt;
+        
+          &lt;div class=&#34;speaker-image&#34;&gt;
+            &lt;img src=&#34;http://shirtlah.com/images/textbubble/limpeh-right-200x200.png&#34; /&gt;
+          &lt;/div&gt;
+        
+        
+          &lt;div class=&#34;speaker-name&#34;&gt;
+            Limpeh
+          &lt;/div&gt;
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+  &lt;span class=&#34;clearfloats&#34; /&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://shirtlah.com/images/qrcode/qrcode-logo-black.png&#34; alt=&#34;Shirt Lah! QR code&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div class=&#34;share-dynamic&#34;&gt;
+  &lt;span class=&#34;share-input&#34;&gt;
+    &lt;textarea
+      class=&#34;input&#34;
+      autocomplete=&#34;off&#34;
+      cols=&#34;30&#34;
+      rows=&#34;2&#34;
+      maxlength=&#34;160&#34;
+      required=&#34;true&#34;
+      spellcheck=&#34;false&#34;
+      &gt;Limpeh says: Simi QR code? #singlish #wearashirtlah&lt;/textarea&gt;
+  &lt;/span&gt;
+  &lt;span class=&#34;share-buttons&#34;&gt;
+    &lt;div class=&#34;share-action&#34;&gt;
+      &lt;a class=&#34;twitter icon-twitter&#34; style=&#34;font-size: 1.4em&#34;
+        onclick=&#34;window.open(this.href, &#39;twitter-share&#39;, &#39;width=550,height=235&#39;);return false;&#34;&gt;
+        &lt;span class=&#34;hidden&#34;&gt;Twitter&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;share-action&#34;&gt;
+      &lt;a class=&#34;facebook icon-facebook&#34; style=&#34;font-size: 1.4em&#34;
+        onclick=&#34;window.open(this.href, &#39;facebook-share&#39;,&#39;width=580,height=296&#39;);return false;&#34;&gt;
+        &lt;span class=&#34;hidden&#34;&gt;Facebook&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>V is for Void Deck</title>

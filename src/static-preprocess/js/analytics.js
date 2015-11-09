@@ -40,19 +40,21 @@ function doCallToActionAnalytics(analyticsFn) {
   emailSubmitElement.addEventListener('click', onClickEmailSubmit);
 
   function onClickSignUpButton() {
-    analyticsFn('send', 'event', 'CTA','navigate-click', '', '#signup');
+    analyticsFn('send', 'event', 'CallToAction','Navigate', 'click', '#signup');
   }
 
   function onFocusEmailInput() {
-    analyticsFn('send', 'event', 'CTA', 'email-focus', '', emailInputElement.value);
+    analyticsFn('send', 'event', 'CallToAction', 'Email', 'focus', {
+      nonInteraction: true,
+    });
   }
 
   function onBlurEmailInput() {
-    analyticsFn('send', 'event', 'CTA', 'email-blur', '', emailInputElement.value);
+    analyticsFn('send', 'event', 'CallToAction', 'Email', 'blur', emailInputElement.value);
   }
 
   function onClickEmailSubmit() {
-    analyticsFn('send', 'event', 'CTA', 'email-submit', '', emailInputElement.value);
+    analyticsFn('send', 'event', 'CallToAction', 'Email', 'submit', emailInputElement.value);
   }
 }
 

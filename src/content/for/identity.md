@@ -21,6 +21,8 @@ Is it that we know how say "We the citizens...", or how to sing "Majulah Singapu
 
 Is it that they guys do two years of National Service after finishing school?
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" %}}
 Kena tekan for two years leh!
 {{% /text-bubble %}}

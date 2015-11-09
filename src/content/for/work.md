@@ -16,8 +16,10 @@ title = "Work Lah!"
 +++
 
 Do you dream of speaking Singlish everywhere, including at work?
-Do you ever find yourself switching to "proper English" at work, and wish that everyone else would just speak "proper Singlish"
- instead?
+Do you ever find yourself switching to "proper English" at work,
+and wish that everyone else would just speak "proper Singlish" instead?
+
+<!--more-->
 
 {{% text-bubble speaker="limpeh" %}}
 Simi? Sure cannot wan!

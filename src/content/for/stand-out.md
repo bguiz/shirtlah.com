@@ -18,7 +18,10 @@ title = "Unique Lah!"
 Picture this:  You're walking down the Orchard road,
 or walking through void decks in your HDB estate.
 
-You look around you, and everyone around you is wearing T-shirts with the same ol' slogans and designs.
+You look around you, and everyone around you is wearing T-shirts with the
+same ol' slogans and designs.
+
+<!--more-->
 
 {{% text-bubble speaker="limpeh" %}}
 Eh, actually ah, I got this shirt. It say Singapore is a fine city.

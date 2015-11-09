@@ -17,6 +17,8 @@ title = "Travel Lah!"
 
 Singapore is so small, when we go on holiday, it's always overseas.
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" %}}
 Cross causeway oso considered overseas meh?
 {{% /text-bubble %}}

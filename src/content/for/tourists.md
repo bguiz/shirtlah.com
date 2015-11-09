@@ -18,6 +18,8 @@ pinterestMedia = "images/shirtlah-logo-120x120.png"
 
 Many many people have been to Singapore - [54 million per year](http://www.changiairportgroup.com/cag/html/the-group/air_traffic_statistics.html) - but most of them don't step out of the airport. Those who do come into Singapore they have a great time, but one thing perplexes them, and that's the language.
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" pointer="right" %}}
 Ha! Tourist come, hear hear Singlish, then blur like *sotong*!
 {{% /text-bubble %}}

@@ -19,6 +19,8 @@ Hi everyone, we're Zhi Cong, Elizabeth, & Brendan
 - the team bringing you **Shirt Lah!** -
 and we wanna tell you the story of how we started:
 
+<!--more-->
+
 It all started when Zhi Cong & Brendan realised that so many people around us were wearing T-shirts from the **same few brands** (such as Threadless). Many times we have thought:
 
 {{% text-bubble type="thought" pointer="left" %}}

@@ -14,6 +14,8 @@ title = "Zhi Cong's Birthday"
 
 Just a quick note from us here at the Shirt Lah! team...
 
+<!--more-->
+
 Zhi Cong has been hard at work these past few weeks
 sourcing for T-shirt suppliers and printers,
 squeezing every bit of free time he has after a full day's work of swim coaching

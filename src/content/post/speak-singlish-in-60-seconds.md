@@ -16,6 +16,8 @@ Never got to learn Singlish in school? Well here's your chance!
 Even if you went to school in Singapore, where everyone speaks Singlish,
 you never would have gotten a proper lesson, with a proper exam.
 
+<!--more-->
+
 {{% text-bubble speaker="limpeh" pointer="right" %}}
 Wa lao eh, got Singlish exam, I sure score A-star in PSLE wan!
 {{% /text-bubble %}}

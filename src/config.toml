@@ -37,32 +37,38 @@ DisqusShortname = "shirtlah"
   alphabet = "/singlish-alphabet/:slug/"
 
 [[menu.main]]
+  name = "Singlish Alphabet"
+  identifier = "singlish-alphabet"
+  weight = 3010
+  url = "/tags/alphabet/"
+
+[[menu.main]]
   pre = "<h3>Follow</h3>"
   name = "Twitter"
   identifier = "social-twitter"
-  weight = 3010
+  weight = 4010
   url = "https://twitter.com/shirtlah"
 
 [[menu.main]]
   name = "Facebook"
   identifier = "social-facebook"
-  weight = 3020
+  weight = 4020
   url = "https://facebook.com/shirtlah"
 
 [[menu.main]]
   name = "Instagram"
   identifier = "social-instagram"
-  weight = 3030
+  weight = 4030
   url = "https://instagram.com/shirtlah"
 
 [[menu.main]]
   name = "Pinterest"
   identifier = "social-pinterest"
-  weight = 3040
+  weight = 4040
   url = "https://pinterest.com/shirtlah"
 
 [[menu.main]]
   name = "Google+"
   identifier = "social-google-plus"
-  weight = 3040
+  weight = 4040
   url = "https://google.com/+ShirtLah"

@@ -12,7 +12,7 @@ function initAnalytics() {
   switch (document.location.hostname) {
     case 'localhost': case '127.0.0.1': case '0.0.0.0':
       analytics = function localhostAnalytics() {
-        console.log(arguments);
+        console.log(JSON.stringify(arguments));
       };
       break;
     default:
@@ -30,36 +30,37 @@ function ensureAnalyticsFn(analyticsFn) {
   return analyticsFn;
 }
 
-function doCallToActionAnalytics(analyticsFn) {
+function ensureAsyncAnalyticsFn(analyticsFn) {
   analyticsFn = ensureAnalyticsFn(analyticsFn);
-  document.querySelector('.floating-cta-button').addEventListener('click', onClickSignUpButton);
-  var emailInputElement = document.querySelector('.mailchimp-slim input.email');
-  emailInputElement.addEventListener('focus', onFocusEmailInput);
-  emailInputElement.addEventListener('blur', onBlurEmailInput);
-  var emailSubmitElement = document.querySelector('.mailchimp-slim input.button');
-  emailSubmitElement.addEventListener('click', onClickEmailSubmit);
-
-  function onClickSignUpButton() {
-    analyticsFn('send', 'event', 'CallToAction','Navigate', 'click', '#signup');
-  }
-
-  function onFocusEmailInput() {
-    analyticsFn('send', 'event', 'CallToAction', 'Email', 'focus', {
-      nonInteraction: true,
-    });
-  }
-
-  function onBlurEmailInput() {
-    analyticsFn('send', 'event', 'CallToAction', 'Email', 'blur', emailInputElement.value);
-  }
-
-  function onClickEmailSubmit() {
-    analyticsFn('send', 'event', 'CallToAction', 'Email', 'submit', emailInputElement.value);
+  return function asyncAnalyticsFn() {
+    var args = arguments;
+    window.setTimeout(function() {
+      analyticsFn.apply(undefined, args);
+    }, 0);
   }
 }
 
+function doCallToActionAnalytics(analyticsFn) {
+  analyticsFn = ensureAsyncAnalyticsFn(analyticsFn);
+  var emailInputElement = document.querySelector('.mailchimp-slim input.email');
+  var emailSubmitElement = document.querySelector('.mailchimp-slim input.button');
+
+  document.querySelector('.floating-cta-button').addEventListener('click', function onClickSignUpButton() {
+    analyticsFn('send', 'event', 'CallToAction','Navigate', 'ClickSignup');
+  });
+  emailInputElement.addEventListener('focus', function onFocusEmailInput() {
+    analyticsFn('send', 'event', 'CallToAction', 'Signup', 'Focus');
+  });
+  emailInputElement.addEventListener('blur', function onBlurEmailInput() {
+    analyticsFn('send', 'event', 'CallToAction', 'Signup', 'Blur') ;
+  });
+  emailSubmitElement.addEventListener('click', function onClickEmailSubmit() {
+    analyticsFn('send', 'event', 'CallToAction', 'Signup', 'Submit') ;
+  });
+}
+
 function doScrollAnalytics(analyticsFn) {
-  analyticsFn = ensureAnalyticsFn(analyticsFn);
+  analyticsFn = ensureAsyncAnalyticsFn(analyticsFn);
 
   var scrollListenerDebounceMs = 150;
   var minScrollBeforeTrack = 150;

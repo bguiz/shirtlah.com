@@ -3,7 +3,7 @@ author = "shirtlah"
 comments = true
 date = "2015-11-09T15:20:55+08:00"
 draft = false
-image = ""
+image = "/images/alphabet/void-deck.png"
 menu = ""
 share = true
 slug = "v-for-void-deck"
@@ -37,3 +37,5 @@ but we still call them void decks!
 {{% text-bubble speaker="limpeh" pointer="right" %}}
 Wa lao eh, no got no more space to play football liao!
 {{% /text-bubble %}}
+
+![Void Deck](/images/alphabet/void-deck.png)

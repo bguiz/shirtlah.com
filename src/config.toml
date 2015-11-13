@@ -1,5 +1,5 @@
 baseurl = "http://shirtlah.com/"
-languageCode = "en-SG"
+languageCode = "en-GB"
 title = "Shirt Lah!"
 theme = "casper"
 paginate = 3

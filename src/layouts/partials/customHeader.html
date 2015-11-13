@@ -1,4 +1,5 @@
 <meta name="p:domain_verify" content="d5d456e71188d849ea771da682a8b728"/>
-<meta property="og:image" content="{{ or ( .Params.image ) ( .Site.Params.logo ) }}"/>
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ or ( .Params.image ) ( .Site.Params.logo ) }}"/>
 <meta property="og:determiner" content=""/>
 <meta property="og:rich_attachment" content="true"/>
+<meta property="fb:app_id" content="417135248483770" />

@@ -1,5 +1,11 @@
 <meta name="p:domain_verify" content="d5d456e71188d849ea771da682a8b728"/>
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ or ( .Params.image ) ( .Site.Params.logo ) }}"/>
-<meta property="og:determiner" content=""/>
 <meta property="og:rich_attachment" content="true"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@shirtlah" />
+<meta name="twitter:title" value="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" >
+<meta name="twitter:description" value="{{ .Site.Params.description }}" />
+<meta property="twitter:image" content="{{ .Site.BaseURL }}{{ or ( .Params.image ) ( .Site.Params.logo ) }}"/>
+<meta property="twitter:label1" content="tags"/>
+<meta property="twitter:data1" content="{{ range .Params.tags }}{{ . }} {{ end }}"/>
 <meta property="fb:app_id" content="417135248483770" />
